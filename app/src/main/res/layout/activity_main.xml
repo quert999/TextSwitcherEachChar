@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mdjf.widgettest.MainActivity">
+
+    <View
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:background="#999999"
+        />
+
+    <com.mdjf.widgettest.MyTV
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="14.5dp"
+        app:maxWidth="200dp"/>
+
+    <TextView
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:maxWidth="200dp"
+        android:id="@+id/otherTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="14.5dp"/>
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/otherTv"
+        android:layout_marginTop="50dp"
+        android:textColor="#666666"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
